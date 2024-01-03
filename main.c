@@ -4,6 +4,13 @@ int main()
 {
     printf("Hello World!\n");
 
+    // comments are just like js
+    // one liner
+    
+    /*
+     * multi liner
+    */
+
     char name[] = "Gabriel";
     char avg_grade = 'A';
     int age = 21;
