@@ -1,8 +1,13 @@
 cmake_minimum_required(VERSION 3.10)
-project(MyProject)
+project(low_level)
 
 set(CMAKE_C_STANDARD 11)
 
-include_directories(include)
+# Gather all source files in the src directory
+file(GLOB_RECURSE SRC_FILES "src/*.c")
 
-add_executable(myprogram src/main.c src/intro.c)
+# Create the executable using all source files
+add_executable(myprogram ${SRC_FILES})
+
+# Include directories for the target
+target_include_directories(myprogram PUBLIC include)

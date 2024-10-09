@@ -1,5 +1,5 @@
-CMakeFiles/myprogram.dir/src/main.c.o: \
-  /Users/gabrielpedroza/Code/low-level/src/main.c \
+CMakeFiles/myprogram.dir/src/data_types.c.o: \
+  /Users/gabrielpedroza/Code/low-level/src/data_types.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/cdefs.h \
@@ -34,5 +34,4 @@ CMakeFiles/myprogram.dir/src/main.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_ssize_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/secure/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/secure/_common.h \
-  /Users/gabrielpedroza/Code/low-level/include/intro.h \
   /Users/gabrielpedroza/Code/low-level/include/data_types.h

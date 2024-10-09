@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/myprogram.dir/src/data_types.c.o"
+  "CMakeFiles/myprogram.dir/src/data_types.c.o.d"
   "CMakeFiles/myprogram.dir/src/intro.c.o"
   "CMakeFiles/myprogram.dir/src/intro.c.o.d"
   "CMakeFiles/myprogram.dir/src/main.c.o"

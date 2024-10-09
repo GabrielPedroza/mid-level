@@ -69,19 +69,19 @@ include CMakeFiles/myprogram.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/myprogram.dir/flags.make
 
-CMakeFiles/myprogram.dir/src/main.c.o: CMakeFiles/myprogram.dir/flags.make
-CMakeFiles/myprogram.dir/src/main.c.o: /Users/gabrielpedroza/Code/low-level/src/main.c
-CMakeFiles/myprogram.dir/src/main.c.o: CMakeFiles/myprogram.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/gabrielpedroza/Code/low-level/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/myprogram.dir/src/main.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myprogram.dir/src/main.c.o -MF CMakeFiles/myprogram.dir/src/main.c.o.d -o CMakeFiles/myprogram.dir/src/main.c.o -c /Users/gabrielpedroza/Code/low-level/src/main.c
+CMakeFiles/myprogram.dir/src/data_types.c.o: CMakeFiles/myprogram.dir/flags.make
+CMakeFiles/myprogram.dir/src/data_types.c.o: /Users/gabrielpedroza/Code/low-level/src/data_types.c
+CMakeFiles/myprogram.dir/src/data_types.c.o: CMakeFiles/myprogram.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/gabrielpedroza/Code/low-level/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/myprogram.dir/src/data_types.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myprogram.dir/src/data_types.c.o -MF CMakeFiles/myprogram.dir/src/data_types.c.o.d -o CMakeFiles/myprogram.dir/src/data_types.c.o -c /Users/gabrielpedroza/Code/low-level/src/data_types.c
 
-CMakeFiles/myprogram.dir/src/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/myprogram.dir/src/main.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gabrielpedroza/Code/low-level/src/main.c > CMakeFiles/myprogram.dir/src/main.c.i
+CMakeFiles/myprogram.dir/src/data_types.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/myprogram.dir/src/data_types.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gabrielpedroza/Code/low-level/src/data_types.c > CMakeFiles/myprogram.dir/src/data_types.c.i
 
-CMakeFiles/myprogram.dir/src/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/myprogram.dir/src/main.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gabrielpedroza/Code/low-level/src/main.c -o CMakeFiles/myprogram.dir/src/main.c.s
+CMakeFiles/myprogram.dir/src/data_types.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/myprogram.dir/src/data_types.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gabrielpedroza/Code/low-level/src/data_types.c -o CMakeFiles/myprogram.dir/src/data_types.c.s
 
 CMakeFiles/myprogram.dir/src/intro.c.o: CMakeFiles/myprogram.dir/flags.make
 CMakeFiles/myprogram.dir/src/intro.c.o: /Users/gabrielpedroza/Code/low-level/src/intro.c
@@ -97,19 +97,35 @@ CMakeFiles/myprogram.dir/src/intro.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/myprogram.dir/src/intro.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gabrielpedroza/Code/low-level/src/intro.c -o CMakeFiles/myprogram.dir/src/intro.c.s
 
+CMakeFiles/myprogram.dir/src/main.c.o: CMakeFiles/myprogram.dir/flags.make
+CMakeFiles/myprogram.dir/src/main.c.o: /Users/gabrielpedroza/Code/low-level/src/main.c
+CMakeFiles/myprogram.dir/src/main.c.o: CMakeFiles/myprogram.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/gabrielpedroza/Code/low-level/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/myprogram.dir/src/main.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/myprogram.dir/src/main.c.o -MF CMakeFiles/myprogram.dir/src/main.c.o.d -o CMakeFiles/myprogram.dir/src/main.c.o -c /Users/gabrielpedroza/Code/low-level/src/main.c
+
+CMakeFiles/myprogram.dir/src/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/myprogram.dir/src/main.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gabrielpedroza/Code/low-level/src/main.c > CMakeFiles/myprogram.dir/src/main.c.i
+
+CMakeFiles/myprogram.dir/src/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/myprogram.dir/src/main.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gabrielpedroza/Code/low-level/src/main.c -o CMakeFiles/myprogram.dir/src/main.c.s
+
 # Object files for target myprogram
 myprogram_OBJECTS = \
-"CMakeFiles/myprogram.dir/src/main.c.o" \
-"CMakeFiles/myprogram.dir/src/intro.c.o"
+"CMakeFiles/myprogram.dir/src/data_types.c.o" \
+"CMakeFiles/myprogram.dir/src/intro.c.o" \
+"CMakeFiles/myprogram.dir/src/main.c.o"
 
 # External object files for target myprogram
 myprogram_EXTERNAL_OBJECTS =
 
-myprogram: CMakeFiles/myprogram.dir/src/main.c.o
+myprogram: CMakeFiles/myprogram.dir/src/data_types.c.o
 myprogram: CMakeFiles/myprogram.dir/src/intro.c.o
+myprogram: CMakeFiles/myprogram.dir/src/main.c.o
 myprogram: CMakeFiles/myprogram.dir/build.make
 myprogram: CMakeFiles/myprogram.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/gabrielpedroza/Code/low-level/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable myprogram"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/gabrielpedroza/Code/low-level/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable myprogram"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myprogram.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

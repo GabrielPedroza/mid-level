@@ -129,6 +129,30 @@ myprogram/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprogram.dir/build.make CMakeFiles/myprogram.dir/build
 .PHONY : myprogram/fast
 
+src/data_types.o: src/data_types.c.o
+.PHONY : src/data_types.o
+
+# target to build an object file
+src/data_types.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprogram.dir/build.make CMakeFiles/myprogram.dir/src/data_types.c.o
+.PHONY : src/data_types.c.o
+
+src/data_types.i: src/data_types.c.i
+.PHONY : src/data_types.i
+
+# target to preprocess a source file
+src/data_types.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprogram.dir/build.make CMakeFiles/myprogram.dir/src/data_types.c.i
+.PHONY : src/data_types.c.i
+
+src/data_types.s: src/data_types.c.s
+.PHONY : src/data_types.s
+
+# target to generate assembly for a file
+src/data_types.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprogram.dir/build.make CMakeFiles/myprogram.dir/src/data_types.c.s
+.PHONY : src/data_types.c.s
+
 src/intro.o: src/intro.c.o
 .PHONY : src/intro.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... myprogram"
+	@echo "... src/data_types.o"
+	@echo "... src/data_types.i"
+	@echo "... src/data_types.s"
 	@echo "... src/intro.o"
 	@echo "... src/intro.i"
 	@echo "... src/intro.s"

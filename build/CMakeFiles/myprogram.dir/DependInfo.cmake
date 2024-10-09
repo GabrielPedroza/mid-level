@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/gabrielpedroza/Code/low-level/src/data_types.c" "CMakeFiles/myprogram.dir/src/data_types.c.o" "gcc" "CMakeFiles/myprogram.dir/src/data_types.c.o.d"
   "/Users/gabrielpedroza/Code/low-level/src/intro.c" "CMakeFiles/myprogram.dir/src/intro.c.o" "gcc" "CMakeFiles/myprogram.dir/src/intro.c.o.d"
   "/Users/gabrielpedroza/Code/low-level/src/main.c" "CMakeFiles/myprogram.dir/src/main.c.o" "gcc" "CMakeFiles/myprogram.dir/src/main.c.o.d"
   )
