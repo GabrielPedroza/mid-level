@@ -1,26 +1,11 @@
 #include <stdio.h>
 
-#include "intro.h"
+#include "types.h"
 
-int introPrint()
-{
-    printf("Hello World!\n");
+int introPrint() {
+  printf("Hello! This is from the intro file\n");
 
-    // comments are just like js
-    // one liner
+  data_types();
 
-    /*
-     * multi
-     * liner
-     */
-
-    char name[] = "Gabriel";
-    char avg_grade = 'A';
-    int age = 21;
-    float gpa = 3.5;
-
-    printf("Hello! My name is %s and I am %d years old.\n", name, age);
-    printf("My average grade is %c and my GPA is %0..1f.\n", avg_grade, gpa);
-
-    return 0;
+  return 0;
 }
