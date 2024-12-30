@@ -9,7 +9,7 @@ CXX = g++
 # -std=c++17: Use the C++17 standard (C++ only)
 # -Iinclude: Include the "include" directory for header files
 CFLAGS = -Wall -Wextra -g -Iinclude
-CXXFLAGS = -Wall -Wextra -g -std=c++17 -Iinclude
+CXXFLAGS = -Wall -Wextra -g -pedantic -pedantic-errors -std=c++17 -Iinclude
 
 # Target executable name
 TARGET = program

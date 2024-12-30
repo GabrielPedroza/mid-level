@@ -4,7 +4,7 @@
 #include "intro.h"
 
 int main() {
-  printf("This code is running!\n");
+std::cout << "Hello world!" << std::endl;
 
   introPrint();
 
