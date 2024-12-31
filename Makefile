@@ -1,6 +1,6 @@
 # C and C++ Compilers
 CC = gcc
-CXX = g++
+CXX = clang++
 
 # Compiler flags
 # -Wall: Enable common warnings
