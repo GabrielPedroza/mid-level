@@ -3,13 +3,8 @@ CC = gcc
 CXX = clang++
 
 # Compiler flags
-# -Wall: Enable common warnings
-# -Wextra: Enable extra warnings
-# -g: Include debugging information
-# -std=c++17: Use the C++17 standard (C++ only)
-# -Iinclude: Include the "include" directory for header files
-CFLAGS = -Wall -Wextra -g -Iinclude
-CXXFLAGS = -Wall -Wextra -Werror -g -pedantic -pedantic-errors -std=c++20 -Iinclude
+CFLAGS = -Wall -Wextra -g -Isrc
+CXXFLAGS = -Wall -Wextra -Werror -g -pedantic -pedantic-errors -std=c++20 -Isrc
 
 # Target executable name
 TARGET = program
@@ -17,13 +12,12 @@ TARGET = program
 # Directories
 SRC_DIR = src
 OBJ_DIR = build
-INC_DIR = include
 
-# Source files (finds all .c and .cpp files in the src directory)
+# Source files
 C_SRCS = $(wildcard $(SRC_DIR)/*.c)
 CPP_SRCS = $(wildcard $(SRC_DIR)/*.cpp)
 
-# Object files (maps source files to object files in the build directory)
+# Object files
 C_OBJS = $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(C_SRCS))
 CPP_OBJS = $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(CPP_SRCS))
 OBJS = $(C_OBJS) $(CPP_OBJS)

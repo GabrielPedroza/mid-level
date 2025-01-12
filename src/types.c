@@ -2,8 +2,4 @@
 
 #include "types.h"
 
-int data_types() {
-  printf("Testing\n");
-
-  return 0;
-}
+void data_types() { printf("Testing\n"); }

@@ -5,11 +5,10 @@
 extern "C" {
 #endif
 
-int data_types();
+void data_types();
 
 #ifdef __cplusplus
 }
 #endif
 
 #endif
-

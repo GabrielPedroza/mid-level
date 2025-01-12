@@ -5,12 +5,10 @@
 extern "C" {
 #endif
 
-int introPrint();
+void introPrint();
 
 #ifdef __cplusplus
 }
 #endif
 
 #endif
-
-
