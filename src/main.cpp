@@ -14,32 +14,19 @@
 #include <cstdio>
 #include <iostream>
 
-typedef struct Test {
+typedef struct Name {
   char name[50];
-  unsigned int age;
-} test_t;
+} name_t;
 
 int main() {
+  // we have to type case it since malloc returns a void*
+  name_t **names = (name_t **)malloc(3 * sizeof(name_t));
 
-  test_t token = {
-      .name = "Gabriel",
-      .age = 5,
-  };
-
-  int count = 3;
-
-  test_t **pointer_array = (test_t **)malloc(count * sizeof(test_t *));
-  ;
-  if (pointer_array == NULL) {
-    fprintf(stderr, "Memory allocation failed\n");
-    return 1;
+  for (size_t i = 0; i < 3; ++i) {
+    names[i] = (name_t *)malloc(sizeof(name_t));
+    strncpy(names[i]->name, "Gabriel", sizeof(names[i]->name));
+    printf("%s\n", names[i]->name);
   }
 
-  pointer_array[0] = &token;
-
-  printf("this is the value of the token from the pointer: %s\n",
-         (*pointer_array[0]).name);
-
-  free(pointer_array);
   return 0;
 }
