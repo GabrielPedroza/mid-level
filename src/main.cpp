@@ -1,18 +1,6 @@
-/*#include <stdio.h>*/
-/*#include <iostream>*/
-/**/
-/*#include "intro.h"*/
-/**/
-/*int main() {*/
-/*  std::cout << "Hello world!" << std::endl;*/
-/**/
-/*  introPrint();*/
-/**/
-/*  return 0;*/
-/*}*/
-
-#include <cstdio>
-#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 typedef struct Name {
   char name[50];
@@ -20,12 +8,13 @@ typedef struct Name {
 
 int main() {
   // we have to type case it since malloc returns a void*
-  name_t **names = (name_t **)malloc(3 * sizeof(name_t));
-  int count = 3;
+  name_t **names = (name_t **)malloc(3 * sizeof(name_t *));
+  size_t count = 3;
 
   for (size_t i = 0; i < count; ++i) {
     names[i] = (name_t *)malloc(sizeof(name_t));
-    strncpy(names[i]->name, "Gabriel", sizeof(names[i]->name));
+    // snprintf guarantees to print out null terminator. strncpy does not!
+    snprintf(names[i]->name, sizeof(names[i]->name), "Gabriel");
     printf("%s\n", names[i]->name);
   }
 
