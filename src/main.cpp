@@ -25,8 +25,8 @@ int main() {
 
   for (size_t i = 0; i < stack->capacity; ++i) {
     stack->elements[i] = (size_t *)malloc(sizeof(size_t));
-    *(size_t *)(stack->elements[i]) = i;
-    std::cout << "Elements: " << *(size_t *)stack->elements[i] << "\n";
+    *(size_t *)stack->elements[i] = i;
+    std::cout << "Elements " << *(int *)stack->elements[i] << "\n";
   }
 
   for (size_t i = 0; i < stack->capacity; ++i) {
