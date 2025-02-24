@@ -1,35 +1,40 @@
+#include <cstddef>
 #include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-typedef struct Name {
-  char name[50];
-} name_t;
+typedef struct Stack {
+  size_t capacity;
+  void **elements;
+} Stack;
 
 int main() {
-  // we have to type case it since malloc returns a void*
-  name_t **names = (name_t **)malloc(3 * sizeof(name_t *));
-  if (names == NULL) {
-    fprintf(stderr, "Memory allocation failed\n");
-  }
-  size_t count = 3;
+  size_t capacity = 5;
+  Stack *stack = (Stack *)malloc(sizeof(Stack));
 
-  for (size_t i = 0; i < count; ++i) {
-    names[i] = (name_t *)malloc(sizeof(name_t));
-    if (names[i] == NULL) {
-      fprintf(stderr, "Memory allocation failed\n");
-    }
-    // snprintf guarantees to print out null terminator. strncpy does not!
-    snprintf(names[i]->name, sizeof(names[i]->name), "Gabriel");
-    printf("%s\n", names[i]->name);
+  stack->elements = (void **)malloc(sizeof(void *) * capacity);
+  if (stack->elements == nullptr) {
+    fprintf(stderr, "Memory Allocation Error\n");
+    exit(1);
   }
+  stack->capacity = capacity;
 
-  for (size_t i = 0; i < count; ++i) {
-    free(names[i]);
+  for (size_t i = 0; i < stack->capacity; ++i) {
+    stack->elements[i] = (size_t *)malloc(sizeof(size_t));
+    *(size_t *)(stack->elements[i]) = i;
+    std::cout << "Elements: " << *(size_t *)stack->elements[i] << "\n";
   }
 
-  free(names);
+  for (size_t i = 0; i < stack->capacity; ++i) {
+    free(stack->elements[i]);
+  }
+
+  free(stack->elements);
+  free(stack);
 
   return 0;
-}
+};
