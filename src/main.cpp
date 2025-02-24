@@ -12,7 +12,14 @@ typedef struct Stack {
   void **elements;
 } Stack;
 
+typedef struct Test {
+  char first_initial; // 1 byte (+ 7 for padding)
+  uint64_t buffer;    // 8 bytes
+  char last_initial;  // 1 byte (+ 7 for padding)
+} Test;
+
 int main() {
+  printf("%zu\n", sizeof(Test));
   size_t capacity = 5;
   Stack *stack = (Stack *)malloc(sizeof(Stack));
 
